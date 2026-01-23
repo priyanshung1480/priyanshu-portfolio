@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #141e30, #243b55);
+    color: white;
+    transition: 0.4s;
+    min-height: 100vh;
+}
+
+
+/* NAVBAR */
+.nav {
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #00ffd5;
+}
+
+/* LOADER */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* HERO */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(120deg, #141e30, #243b55);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero h3 {
+    margin: 15px 0;
+    color: #00ffd5;
+}
+
+.hero p {
+    max-width: 500px;
+    opacity: 0.9;
+}
+
+/* BUTTONS */
+.btn-group {
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #00ffd5;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* CONTENT */
+.content {
+    padding: 80px 15%;
+    animation: slideUp 1s ease;
+    background: rgba(0,0,0,0.35);
+    border-radius: 15px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+.content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards li {
+    background: rgba(255,255,255,0.08);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(6px);
+}
+.cards li:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .content,
+.dark .cards li {
+    background: #1e1e1e;
+}
+
+/* ANIMATION */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h3 {
+        font-size: 16px;
+    }
+
+    .hero p {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
