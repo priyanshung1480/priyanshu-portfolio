@@ -55,7 +55,7 @@ If you’d like to contribute:
 
 ## 📧 Contact
 Feel free to reach out for collaborations or opportunities:  
-- **Email:** priyanshu@example.com  
+- **Email:** priyanshung08@gmail.com  
 - **GitHub:** [@priyanshung1480](https://github.com/priyanshung1480)
 
 ---
